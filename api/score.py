@@ -7,6 +7,7 @@ from http.server import BaseHTTPRequestHandler
 # Upstash Redis Environment Variables (auto-populated by Vercel)
 KV_URL = os.environ.get("UPSTASH_REDIS_REST_URL")
 KV_TOKEN = os.environ.get("UPSTASH_REDIS_REST_TOKEN")
+API_URL = "https://space-shooter-game-score.vercel.app/api/score"
 
 def kv_cmd(cmd, *args):
     """Helper to execute Upstash Redis commands via HTTP REST API."""
